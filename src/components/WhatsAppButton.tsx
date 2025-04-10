@@ -1,5 +1,5 @@
 
-import { WhatsApp } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { useState } from "react";
 
 const WhatsAppButton = () => {
@@ -25,7 +25,7 @@ const WhatsAppButton = () => {
         className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110"
         aria-label="Contato via WhatsApp"
       >
-        <WhatsApp className="h-6 w-6" />
+        <MessageSquare className="h-6 w-6" />
       </button>
     </div>
   );
