@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,26 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				// Cores personalizadas para a campanha
+				'eco-green': {
+					light: '#7FB069',
+					DEFAULT: '#5B8C5A',
+					dark: '#386641'
+				},
+				'eco-red': {
+					light: '#E76F51',
+					DEFAULT: '#D62828',
+					dark: '#9E2A2B'
+				},
+				'eco-yellow': {
+					light: '#FFF1D0',
+					DEFAULT: '#F9C74F',
+					dark: '#F3A712'
+				},
+				'eco-orange': {
+					DEFAULT: '#F8961E',
+					dark: '#F3722C'
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +105,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-slow': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.8'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif']
 			}
 		}
 	},
