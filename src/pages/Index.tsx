@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Residencial from "@/components/Residencial";
 import Empresarial from "@/components/Empresarial";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <Residencial />
       <Empresarial />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
