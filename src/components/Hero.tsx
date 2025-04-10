@@ -23,7 +23,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-32">
         <div className="flex flex-col items-center">
-          <div className="w-full max-w-3xl mx-auto mb-8">
+          <div className="w-full max-w-2xl mx-auto mb-8">
             <img 
               src="/lovable-uploads/b867a5b5-4b6a-4f72-9a2f-5c50d7124a56.png" 
               alt="Campanha de Reciclagem de Óleo de Cozinha" 
