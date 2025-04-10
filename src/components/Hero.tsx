@@ -22,41 +22,33 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-eco-green-dark mb-6 leading-tight">
-              <span className="block text-eco-orange mb-2">Campanha de</span>
-              Reciclagem de Óleo de Cozinha
-            </h1>
-            <p className="text-lg sm:text-xl text-gray-700 mb-8">
-              Transforme um <span className="text-eco-red-light font-semibold">problema ambiental</span> em uma <span className="text-eco-green font-semibold">solução sustentável</span> com a RedLub Recioleo.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button 
-                onClick={scrollToSection}
-                className="eco-btn flex items-center justify-center gap-2 text-lg"
-              >
-                Saiba Mais
-                <ArrowDown size={20} />
-              </button>
-              <a 
-                href="#empresarial" 
-                className="eco-btn-secondary flex items-center justify-center"
-              >
-                Para Empresas
-              </a>
-            </div>
+        <div className="flex flex-col items-center">
+          <div className="w-full max-w-4xl mx-auto mb-8">
+            <img 
+              src="/lovable-uploads/b867a5b5-4b6a-4f72-9a2f-5c50d7124a56.png" 
+              alt="Campanha de Reciclagem de Óleo de Cozinha" 
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
           
-          <div className="mx-auto max-w-md lg:max-w-full">
-            <div className="relative rounded-xl overflow-hidden shadow-2xl">
-              <img 
-                src="/lovable-uploads/067095bb-ef25-4149-96d0-61402f474d3c.png" 
-                alt="Campanha de Reciclagem de Óleo" 
-                className="w-full h-auto"
-              />
-            </div>
+          <p className="text-lg sm:text-xl text-gray-700 mb-8 text-center max-w-2xl mx-auto">
+            Transforme um <span className="text-eco-red-light font-semibold">problema ambiental</span> em uma <span className="text-eco-green font-semibold">solução sustentável</span> com a RedLub Recioleo.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button 
+              onClick={scrollToSection}
+              className="eco-btn flex items-center justify-center gap-2 text-lg"
+            >
+              Saiba Mais
+              <ArrowDown size={20} />
+            </button>
+            <a 
+              href="#empresarial" 
+              className="eco-btn-secondary flex items-center justify-center"
+            >
+              Para Empresas
+            </a>
           </div>
         </div>
       </div>
